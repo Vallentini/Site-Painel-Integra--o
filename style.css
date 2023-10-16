@@ -19,28 +19,17 @@
       padding-bottom: 12px;
   }
 
-  .img {
-      width: 400px;
-      height: 355px;
-      padding-left: 0;
-      border-radius: 10px;
-      margin-top: 50px;
-      padding-right: 20px;
-
-
-  }
-
   h1 {
-    padding-left: 60px;
+      padding-left: 60px;
       color: #fff4f4;
       font-size: 30px;
       font-family: 'ADLaM Display', cursive;
   }
 
   h4 {
-    color: #fff4f4;
-    font-size: 30px;
-    font-family: 'ADLaM Display', cursive;
+      color: #fff4f4;
+      font-size: 30px;
+      font-family: 'ADLaM Display', cursive;
 
   }
 
@@ -55,44 +44,44 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #8582825e;
+      background-color: #a7a6a6;
       position: fixed;
 
   }
 
   .nav-home {
-      float: left;
+      float: right;
+      padding-left: 15px;
+      padding-right: 15px;
   }
 
-  .task {
-      font-size: 30px;
-      padding: 20px 25px;
-      display: flex;
-      background-image: var(--gradiente);
-      background-clip: text;
-      -webkit-background-clip: text;
-      font-family: 'Bree Serif', serif;
-      color: transparent;
-      text-decoration: none;
-
+  .nav-home1{
+    float: left;
   }
+
+  .logo{
+    width: 100px;
+    margin-left: 50px;
+  }
+
 
   .nav-home .nav-conteudo {
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       font-weight: normal;
-      font-size: 25px;
+      font-size: 35px;
       display: block;
       color: rgb(0, 0, 0);
-      text-align: center;
       padding: 20px 25px;
       text-decoration: none;
       transition: transform .2s;
+      margin-top: 10px;
   }
 
   .nav-home .nav-conteudo:hover {
       background-color: #ffb764;
       transform: scale(1.1);
-
+      color: #ffffff;
+      border-radius: 12px;
   }
 
   :root {
@@ -110,14 +99,16 @@
 
   .nav-conteudo:hover {
       color: black;
-      transition: 0.8s;
+      transition: 0.3s;
   }
 
   .cardIVocatest {
-      margin: 110px 0 40px 0;
+      margin-top: 140px;
+      margin-bottom: 20px;
       font-size: 18px;
       background-color: #ffffff;
       padding: 20px 35px;
+      width: 700px;
   }
 
   .card-item:hover {
@@ -132,7 +123,7 @@
   }
 
   .divfooter {
-    text-align: center;
+      text-align: center;
       background-color: #383737;
       padding-top: 50px;
       padding-left: 20px;
@@ -140,9 +131,9 @@
 
   }
 
-  ul{
-    padding-top: 10px;
-    text-align: center;
+  ul {
+      padding-top: 10px;
+      text-align: center;
   }
 
   .footer {
@@ -162,8 +153,5 @@
   }
 
   ul a {
-    color: white;
+      color: white;
   }
-
-
-
