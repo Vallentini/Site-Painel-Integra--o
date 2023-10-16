@@ -44,8 +44,9 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #a7a6a6;
+      background-color: #000000;
       position: fixed;
+      color: white;
 
   }
 
@@ -70,15 +71,16 @@
       font-weight: normal;
       font-size: 35px;
       display: block;
-      color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
       padding: 20px 25px;
       text-decoration: none;
       transition: transform .2s;
       margin-top: 10px;
+      
   }
 
   .nav-home .nav-conteudo:hover {
-      background-color: #ffb764;
+      background-color: #4d4d4d;
       transform: scale(1.1);
       color: #ffffff;
       border-radius: 12px;
@@ -154,4 +156,12 @@
 
   ul a {
       color: white;
+  }
+
+   nav li {
+        color: white;
+  }
+
+  @media(max-width: 900px) and (min-width: 600px) {
+    
   }
