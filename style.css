@@ -163,5 +163,21 @@
   }
 
   @media(max-width: 900px) and (min-width: 600px) {
+    .cardIVocatest {
+        width: 400px;
+        margin: auto;
+    }
+
     
+  }
+
+  @media(max-width: 600px) and (min-width: 300px) {
+    .footer {
+        font-size: small;
+    }
+
+    .cardIVocatest {
+        width: 250px;
+        margin: auto;
+    }
   }
