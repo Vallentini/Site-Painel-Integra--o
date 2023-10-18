@@ -116,7 +116,7 @@
       height: 70px;
       width: 100%;
       padding: 50px;
-      background-color: orange;
+      background-color: rgb(255, 187, 62);
       display: flex;
       justify-content: space-between;
       align-items: center;
