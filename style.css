@@ -54,8 +54,7 @@
 
 
   .cardIVocatest {
-      margin-top: 70px;
-      margin-bottom: 20px;
+      margin: 70px auto 20px auto;
       font-size: 18px;
       background-color: #ffffff;
       padding: 20px 35px;
@@ -96,12 +95,13 @@
       height: 350px;
       overflow: hidden;
       background-color: #383737;
-      display: grid;
+      display: flex;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       color: #ffffff;
       font-size: 15px;
       font-family: 'ADLaM Display', cursive;
+      justify-content: center;
   }
 
   ul a {
@@ -239,8 +239,8 @@
 
   @media(max-width: 900px) and (min-width: 600px) {
     .cardIVocatest {
-        width: 400px;
-        margin: auto;
+        width: 450px;
+        margin: 40px auto 20px auto;
     }
 
     
@@ -252,7 +252,11 @@
     }
 
     .cardIVocatest {
-        width: 250px;
-        margin: auto;
+        width: 300px;
+        margin: 40px auto 20px auto;
+    }
+    
+    footer {
+        flex-wrap: wrap;
     }
   }
