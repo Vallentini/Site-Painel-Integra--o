@@ -8,28 +8,43 @@
     <link rel="shortcut icon" href="Imagens/VocaTeste_logo (1).png"
       type="image/x-icon">
     <link href="style.css" rel="stylesheet">
-    <script defer src="script.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("links-menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        </script>
     <title>Personalidade - VOCATEST</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <ul>
-          <li class="nav-home1"><img src="Imagens/VocaTeste_logo (1).png"
-              alt="logo1" class="logo1"></li>
-        </ul>
-        <button class="hamburger"></button>
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Personalidade.html">Personalidade</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="conteudo">
+    <header class="tudo-menu">
+
+      <div class="topnav">
+        <img src="Imagens/VocaTeste_logo (1).png" alt="logo1" class="logo1">
+          <nav>
+              <div id="links-menu">
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="pag1.html">Geral</a></li>
+                      <li><a href="pag2.html">Expecíficos</a></li>
+                  </ul>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+              </a>
+          </nav>
+      </div>
+  </header>
+    <main>
       <section class="container">
+
         <div class="cardIVocatest">
 
-          <h1 class="A5">SAMBAQUI</h1>
+          <strong><h1 class="A5">SAMBAQUI</h1></strong>
 
           <h2>"O QUE É SAMBAQUI?"</h2>
 
@@ -71,12 +86,10 @@
 
         </div>
       </section>
-    </main>
-    <main class="conteudo">
       <section class="container2">
+        <h1 class="containerr2">SAMBAQUI</h1>
         <div class="cardIVocatest2">
 
-          <h1 class="A5">SAMBAQUI</h1>
 
           <h2>"O QUE É SAMBAQUI?"</h2>
 
@@ -111,43 +124,8 @@
 
         </div>
       </section>
-    </main>
-    <main class="conteudo">
       <section class="container3">
         <div class="cardIVocatest3">
-
-          <h1 class="A5">SAMBAQUI</h1>
-
-          <h2>"O QUE É SAMBAQUI?"</h2>
-
-          <p class="conteudoDentro"> De acordo com o conteúdo estudado em sala
-            nas aulas de
-            história os sambaquis são montes ou montanhas artificiais (porque
-            foram construídos por seres humanos) feitos
-            de conchas, utilizado para descarte e depósito de objetos (armas da
-            época e utensílios do dia a dia), fósseis
-            de animais e como cemitério para as
-            pessoas.</p>
-
-          <h2>LOCALIZAÇÃO DOS SAMBAQUIS EM NOSSA REGIÃO:</h2>
-
-          <p class="conteudoDentro"> Podemos observar no mapa os Sítios
-            Arqueológicos
-            Pré-Coloniais cercados pela Baía de Babitonga, presentes em
-            Joinville, São Francisco do Sul, Araquari, Barra
-            do Sul, Itapoá e Garuva, localizadas no litoral de Santa Catarina.</p>
-
-          <h2>"O POVO QUE VIVIA NO SAMBAQUI ERA DA ESPÉCIE HOMO SAPIENS?"</h2>
-
-          <p class="conteudoDentro"> Pelo conteúdo estudado em sala, os
-            sambaquis eram de
-            espécie homo sapiens, pelo motivo de só terem encontrado no
-            continente americano fósseis da espécie homo
-            sapiens.</p>
-
-          <h2>"COMO ESSE POVO CHEGOU ATÉ A AMÉRICA? E, PELOS ELEMENTOS QUE
-            EXISTEM NA ARQUEOLOGIA,QUANDO
-            HABITARAM A REGIÃO DA BAÍA DA BABITONGA?"</h2>
 
         </div>
         <div class="cardIVocatest4">
@@ -180,10 +158,6 @@
             espécie homo sapiens, pelo motivo de só terem encontrado no
             continente americano fósseis da espécie homo
             sapiens.</p>
-
-          <h2>"COMO ESSE POVO CHEGOU ATÉ A AMÉRICA? E, PELOS ELEMENTOS QUE
-            EXISTEM NA ARQUEOLOGIA,QUANDO
-            HABITARAM A REGIÃO DA BAÍA DA BABITONGA?"</h2>
 
         </div>
 
