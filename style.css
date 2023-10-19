@@ -35,8 +35,7 @@
   }
 
   body {
-      background-image: url(Imagens/personalidades.png);
-      background-size: 110%;
+    background-color: darkgray;
   }
 
   .logo1 {
@@ -54,7 +53,8 @@
 
 
   .cardIVocatest {
-      margin: 70px auto 20px auto;
+      margin-top: 70px;
+      margin-bottom: 70px;
       font-size: 18px;
       background-color: #ffffff;
       padding: 20px 35px;
@@ -88,20 +88,20 @@
   }
 
   .footer {
-      margin-top: 10px;
       left: 0;
       bottom: 0;
+      width: 100%;
+      height: 300px;
+      text-align: center;      
       list-style-type: none;
-      height: 350px;
       overflow: hidden;
       background-color: #383737;
-      display: flex;
+      display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       color: #ffffff;
       font-size: 15px;
       font-family: 'ADLaM Display', cursive;
-      justify-content: center;
   }
 
   ul a {
@@ -236,6 +236,128 @@
           top: -7px;
       }
   }
+
+  @media(max-width: 900px) {
+    :root{
+        --cor-letraVar: rgb(0, 0, 0);
+        --cor-principal: rgb(255, 255, 255);
+      }
+      
+      * {
+          margin: 0;
+          padding: 0;
+          border: none;
+          list-style: none;
+          text-decoration: none;
+          box-sizing: border-box;
+      }
+    
+      .A5 {
+          text-align: center;
+          font-size: 15px;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          color: rgb(0, 0, 0);
+          padding-bottom: 12px;
+      }
+    
+      h1 {
+          padding-left: 60px;
+          color: #ffffff;
+          font-size: 30px;
+          font-family: 'ADLaM Display', cursive;
+      }
+    
+      h4 {
+          color: #fff4f4;
+          font-size: 30px;
+          font-family: 'ADLaM Display', cursive;
+    
+      }
+    
+      body {
+          background-image: url(Imagens/personalidades.png);
+          background-size: 110%;
+      }
+    
+      .logo1 {
+          width: 65px;
+          margin-left: 150px;
+      }
+    
+      .container {
+          max-width: 1230px;
+          margin: auto;
+          display: grid;
+          grid-template-areas: "main";
+          width: 100%;
+      }
+    
+    
+      .cardIVocatest {
+          margin-top: 70px;
+          margin-bottom: 20px;
+          font-size: 18px;
+          background-color: #ffffff;
+          padding: 20px 35px;
+          width: 50%;
+          border-radius: 12px;
+          margin-left: 15%;
+      }
+
+      .conteudoDentro {
+          text-indent: 2cm;
+          padding-bottom: 10px;
+          padding-top: 10px;
+      }
+    
+      .divfooter {
+          text-align: center;
+          background-color: #383737;
+          padding-top: 50px;
+          padding-left: 20px;
+    
+    
+      }
+    
+      ul {
+          padding-top: 10px;
+          text-align: center;
+      }
+    
+      .footer {
+          margin-top: 10px;
+          left: 0;
+          margin-bottom: 0;
+          list-style-type: none;
+          height: 80%;
+          overflow: hidden;
+          background-color: #383737;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          color: #ffffff;
+          font-size: 15px;
+          font-family: 'ADLaM Display', cursive;
+      }
+    
+      ul a {
+          color: rgb(255, 251, 251);
+      }
+    
+    
+  }
+
+  @media(max-width: 600px) and (min-width: 300px) {
+    .footer {
+        font-size: small;
+    }
+
+    .cardIVocatest {
+        width: 250px;
+        margin: auto;
+    }
+  }
+
 
   @media(max-width: 900px) and (min-width: 600px) {
     .cardIVocatest {
