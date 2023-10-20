@@ -50,7 +50,6 @@ p{
     padding-top: 10px;
     color: var(--cor-principal);
     font-size: 20px;
-    text-align: justify;
 }
 
 .conteudoDentro2 {
@@ -59,6 +58,7 @@ p{
     padding-top: 10px;
     color: black;
     font-size: 18px;
+    padding-right: 5px;
 }
 
 .A5 {
@@ -95,14 +95,6 @@ h4{
 }
 h1 strong{
     color: #f3d46d;
-}
-
-.div-1 {
-    text-align: right;
-}
-
-.div-2 {
-    text-align: left;
 }
 
 body {
@@ -257,6 +249,7 @@ header h1 {
     background-color: var(--cor-verdeEscuro2);
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     flex-direction: row;
     justify-content: center;
     gap: 15px;
