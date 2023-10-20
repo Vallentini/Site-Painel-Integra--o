@@ -41,16 +41,24 @@ main {
 }
 
 p{
-    /* padding-left: 15px; */
+    padding-left: 15px;
 }
 
 .conteudoDentro {
     text-indent: 2cm;
     padding-bottom: 10px;
     padding-top: 10px;
-    color: #111111;
+    color: var(--cor-principal);
     font-size: 20px;
     text-align: justify;
+}
+
+.conteudoDentro2 {
+    text-indent: 2cm;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: black;
+    font-size: 18px;
 }
 
 .A5 {
@@ -62,6 +70,7 @@ p{
 }
 
 h2 {
+    padding-top: 15px;
     color: var(--cor-amarela);
 }
 
@@ -72,15 +81,30 @@ h1 {
     font-family: 'ADLaM Display', cursive;
 }
 
-h4 {
+h3 {
     color: #fff4f4;
-    font-size: 30px;
-    font-family: 'ADLaM Display', cursive;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif
+}
+
+h4{
+    color: #fff4f4;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif
 
 }
 h1 strong{
     color: #f3d46d;
 }
+
+.div-1 {
+    text-align: right;
+}
+
+.div-2 {
+    text-align: left;
+}
+
 body {
     background-color: var(--cor-verdeEscuro2 );
     padding: 0;
@@ -93,14 +117,27 @@ img {
 .imgIndex {
     width: 100%;
     border-radius: 20px;
+    transition: transform .2s;
 }
 
 .imgGráfico{
-    padding-top: 20px;
+    margin-top: 10px;
     max-width: 500px;
     width: 100%;
+    border-radius: 12px;
+    transition: transform .2s;
+    margin: auto;
 }
 
+.imgGráfico:hover{
+    transform: scale(1.03);
+
+}
+
+.imgIndex:hover{
+    transform: scale(1.03);
+
+}
 
 .logo1 {
     width: 65px;
@@ -217,11 +254,9 @@ header h1 {
 
 .container4 {
     min-height: 100vh;
-    width: 100%;
     background-color: var(--cor-verdeEscuro2);
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     flex-direction: row;
     justify-content: center;
     gap: 15px;
@@ -233,8 +268,6 @@ header h1 {
     margin: auto;
     display: grid;
     grid-template-areas: "main";
-    width: 100%;
-    display: grid;
     margin-bottom: 70px;
 }
 
@@ -244,7 +277,6 @@ header h1 {
     margin: auto;
     display: grid;
     grid-template-areas: "main";
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -256,7 +288,6 @@ header h1 {
     margin: auto;
     display: grid;
     grid-template-areas: "main";
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -287,6 +318,7 @@ header h1 {
     padding: 20px 35px;
     max-width: 1000px;
     border-radius: 12px;
+    margin: auto;
 }
 
 .containerr2 {
@@ -323,16 +355,19 @@ header h1 {
     background-color: var(--cor-amarela);
     padding-right: 20px;
     padding-left: 25px;
-    padding-top: 25px;
     width: 750px;
+    padding-top: 8px;
     border-radius: 12px;
 }
 
 .cardIVocatest6 {
     font-size: 18px;
     background-color: var(--cor-verde);
-    padding: 20px 35px;
     width: 750px;
+    border-radius: 12px;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-top: 8px;
     border-radius: 12px;
 
 }
@@ -340,8 +375,9 @@ header h1 {
 .div1 {
     width: 100%;
     background-color: var(--cor-principal);
+    border-radius: 12px;
+    text-align: center;
     height: 100%;
-    border-radius: 30px;
 }
 
 .cardIVocatest7 {
@@ -350,33 +386,38 @@ header h1 {
     font-size: 18px;
     background-color: var(--cor-verdeEscuro);
     padding: 20px 35px;
-    width: 1500px;
+    width: 1200px;
     border-radius: 12px;
     margin-left: 200px;
+    height: 70%;
 
 }
 .cardIVocatest8 {
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 18px;
     background-color: var(--cor-rosaEscuro);
-    padding-top: 25px;
-    width: 750px;
+    padding-top: 11px;
+    width: 600px;
     border-radius: 30px;
     margin-left: 190px;
     margin-bottom: 20px;
+    margin-right: 10px;
+    text-align: center;
 }
 
 .cardIVocatest8-1 {
     font-size: 18px;
     background-color: var(--cor-rosaEscuro);
-    width: 750px;
+    width: 600px;
     border-radius: 30px;
     margin-bottom: 50px;
+    text-align: center;
+    padding-top: 22px;
 }
 
 .cardItem1 {
-    margin-top: 50px;
-    width: 750px;
+    margin-top: 20px;
+    width: 600px;
     background-color: var(--cor-principal);
     border-radius: 30px;
     margin-bottom: 20px;
@@ -385,11 +426,12 @@ header h1 {
 
 .cardItem1-2 {
     font-size: 18px;    
-    width: 750px;
+    width: 600px;
     background-color: var(--cor-principal);
     border-radius: 30px;
     margin-left: 190px;
     margin-bottom: 50px;
+    padding-top: 20px;
 
 }
 
@@ -398,45 +440,46 @@ header h1 {
     font-size: 18px;
     background-color: var(--cor-AzulBb);
     padding-top: 25px;
-    width: 750px;
+    width: 600px;
     border-radius: 30px;
     margin-left: 190px;
     margin-bottom: 20px;
 }
 
 .cardIVocatest9-1 {
-    margin-top: 140px;
+    text-align: center;
+    margin-top: 20px;
     font-size: 18px;
     background-color: var(--cor-AzulBb);
     width: 700px;
     border-radius: 30px;
 }
 .cardItem3-2{
-    margin-top: 140px;
-    margin-left: 230px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 90px;
     font-size: 18px;
     background-color: var(--cor-AzulBb);
     width: 700px;
     border-radius: 30px;
+    margin-right: 10px;
 }
 .cardItem4-1{
-    margin-left: 20px;
-    margin-top: 40px;
-    width: 650px;
+    margin: auto;
+    text-align: center;
+    width: 500px;
     background-color: var(--cor-principal);
     border-radius: 15px;
-    margin-bottom: 20px;
-  
+    margin-top: 10px;
+
 }
 
 .cardItem5 {
-    margin-top: 300px;
-    margin-left: 20px;
-    width: 650px;
+    width: 500px;
     background-color: var(--cor-principal);
     border-radius: 15px;
-    margin-bottom: 40px;
-
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .divfooter {
